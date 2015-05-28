@@ -1,0 +1,153 @@
+body {
+  color: #444;
+  font: 14px/1.3 "Helvetica Neue", Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 0 15px;
+}
+.detail-view {
+  background: #f7f7f7;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+}
+.browse-view {
+  padding: 40px 0;
+}
+.badge-switcher {
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+  width: 600px;
+}
+.badge-switch {
+  color: #aaa;
+  font-size: 36px;
+  position: absolute;
+  text-decoration: none;
+  top: 90px;
+}
+.badge-switch-left {
+  left: 0;
+}
+.badge-switch-right {
+  right: 0;
+}
+.badge-switch.disabled {
+  color: #e9e9e9;
+}
+.full-badge {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #666;
+  padding: 30px 40px;
+}
+.full-badge-icon {
+  float: left;
+  text-align: center;
+  width: 160px;
+}
+.full-badge-icon img {
+  display: block;
+  height: 160px;
+  width: 160px;
+}
+.full-badge-title, .full-badge-description {
+  margin-left: 200px;
+}
+.full-badge-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.full-badge-description {
+  font-size: 18px;
+  font-weight: bold;
+}
+header {
+  border-bottom: 1px solid #f7f7f7;
+  padding: 8px 0 3px 0;
+}
+.logo img {
+  margin-left: 6px;
+  width: 166px;
+}
+.category {
+  margin-bottom: 10px;
+}
+.category h2 {
+  margin: 0;
+}
+.category h2 img {
+  margin-right: 10px;
+  width: 16px;
+}
+ul.badges {
+  margin-bottom: 0;
+  padding: 0;
+}
+ul.badges li {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+ul.badges li img {
+  border: 5px solid transparent;
+}
+ul.badges li a.active img {
+  border: 5px solid #f9e165;
+  border-radius: 50px;
+}
+ul.badges li h3.no-results {
+  color: #bbb;
+  font-style: italic;
+}
+input#query {
+  background: white url('../img/search-icon.png') 15px 10px no-repeat;
+  background-size: 26px 26px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px 40px 10px 55px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 730px) {
+  .badge-switcher {
+    width: auto;
+  }
+  .badge-switch {
+    top: 150px;
+  }
+  .full-badge {
+    padding: 30px 20px;
+  }
+  .full-badge-title, .full-badge-description {
+    margin-left: 0;
+    text-align: center;
+  }
+  .full-badge-icon {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .full-badge-icon img {
+    display: inline-block;
+    height: auto;
+    width: 50%;
+  }
+}
